@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E52B91532828ECBB0037B737 /* PiecesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52B91522828ECBB0037B737 /* PiecesView.swift */; };
+		E52B91562828F3520037B737 /* SwiftChess in Frameworks */ = {isa = PBXBuildFile; productRef = E52B91552828F3520037B737 /* SwiftChess */; };
+		E52B91592828F3650037B737 /* SwiftSpeech in Frameworks */ = {isa = PBXBuildFile; productRef = E52B91582828F3650037B737 /* SwiftSpeech */; };
 		ED2132172815FD6B00EC47A8 /* BlindfoldChessApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2132162815FD6B00EC47A8 /* BlindfoldChessApp.swift */; };
 		ED2132192815FD6B00EC47A8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2132182815FD6B00EC47A8 /* ContentView.swift */; };
 		ED21321B2815FD6D00EC47A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED21321A2815FD6D00EC47A8 /* Assets.xcassets */; };
@@ -14,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E52B91522828ECBB0037B737 /* PiecesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PiecesView.swift; sourceTree = "<group>"; };
 		ED2132132815FD6B00EC47A8 /* BlindfoldChess.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlindfoldChess.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED2132162815FD6B00EC47A8 /* BlindfoldChessApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlindfoldChessApp.swift; sourceTree = "<group>"; };
 		ED2132182815FD6B00EC47A8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -26,6 +30,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E52B91592828F3650037B737 /* SwiftSpeech in Frameworks */,
+				E52B91562828F3520037B737 /* SwiftChess in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -55,6 +61,7 @@
 				ED2132182815FD6B00EC47A8 /* ContentView.swift */,
 				ED21321A2815FD6D00EC47A8 /* Assets.xcassets */,
 				ED21321C2815FD6D00EC47A8 /* Preview Content */,
+				E52B91522828ECBB0037B737 /* PiecesView.swift */,
 			);
 			path = BlindfoldChess;
 			sourceTree = "<group>";
@@ -83,6 +90,10 @@
 			dependencies = (
 			);
 			name = BlindfoldChess;
+			packageProductDependencies = (
+				E52B91552828F3520037B737 /* SwiftChess */,
+				E52B91582828F3650037B737 /* SwiftSpeech */,
+			);
 			productName = BlindfoldChess;
 			productReference = ED2132132815FD6B00EC47A8 /* BlindfoldChess.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +122,10 @@
 				Base,
 			);
 			mainGroup = ED21320A2815FD6B00EC47A8;
+			packageReferences = (
+				E52B91542828F3520037B737 /* XCRemoteSwiftPackageReference "SwiftChess" */,
+				E52B91572828F3650037B737 /* XCRemoteSwiftPackageReference "SwiftSpeech" */,
+			);
 			productRefGroup = ED2132142815FD6B00EC47A8 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,6 +152,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E52B91532828ECBB0037B737 /* PiecesView.swift in Sources */,
 				ED2132192815FD6B00EC47A8 /* ContentView.swift in Sources */,
 				ED2132172815FD6B00EC47A8 /* BlindfoldChessApp.swift in Sources */,
 			);
@@ -149,6 +165,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "";
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
@@ -209,6 +226,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "";
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
@@ -339,6 +357,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E52B91542828F3520037B737 /* XCRemoteSwiftPackageReference "SwiftChess" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SteveBarnegren/SwiftChess.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		E52B91572828F3650037B737 /* XCRemoteSwiftPackageReference "SwiftSpeech" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Cay-Zhang/SwiftSpeech";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E52B91552828F3520037B737 /* SwiftChess */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E52B91542828F3520037B737 /* XCRemoteSwiftPackageReference "SwiftChess" */;
+			productName = SwiftChess;
+		};
+		E52B91582828F3650037B737 /* SwiftSpeech */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E52B91572828F3650037B737 /* XCRemoteSwiftPackageReference "SwiftSpeech" */;
+			productName = SwiftSpeech;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = ED21320B2815FD6B00EC47A8 /* Project object */;
 }

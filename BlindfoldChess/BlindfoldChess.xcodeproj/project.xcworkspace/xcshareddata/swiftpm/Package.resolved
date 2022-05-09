@@ -1,0 +1,23 @@
+{
+  "pins" : [
+    {
+      "identity" : "swiftchess",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/SteveBarnegren/SwiftChess.git",
+      "state" : {
+        "branch" : "master",
+        "revision" : "99dd6adbcd66c0c538d19a606a6470e7a6afefc1"
+      }
+    },
+    {
+      "identity" : "swiftspeech",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Cay-Zhang/SwiftSpeech",
+      "state" : {
+        "branch" : "master",
+        "revision" : "6e41f289f5ccc1751ef5674972d46b48b326c4c6"
+      }
+    }
+  ],
+  "version" : 2
+}
