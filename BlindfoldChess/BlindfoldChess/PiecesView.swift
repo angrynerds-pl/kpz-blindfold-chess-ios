@@ -3,75 +3,25 @@ import SwiftUI
 import SwiftChess
 
 struct PiecesView: View {
+    let pieces = [
+        "Pawn",
+        "Rook",
+        "Bishop",
+        "Knight",
+        "Queen",
+        "King",
+    ]
+    
     var body: some View {
-        VStack(alignment: .leading) {
-            VStack() {
-                Divider()
-                HStack() {
-                    Image("BlackPawn")
+        NavigationView {
+            List(pieces, id: \.self) { piece in
+                NavigationLink(destination: PieceView(piece: piece)) {
+                    Image(parseImageName(piece: piece))
                         .resizable()
-                        .frame(width: 32.0, height: 32.0)
-                    Text("Pawn")
-                }.padding(20)
-            }.onTapGesture {
-                print("Pawn")
+                        .frame(width: 24.0, height: 24.0)
+                    Text(piece)
+                }.navigationBarTitle("Select piece to see more information", displayMode: .inline)
             }
-            VStack() {
-                Divider()
-                HStack() {
-                    Image("BlackRook")
-                        .resizable()
-                        .frame(width: 32.0, height: 32.0)
-                    Text("Rook")
-                }.padding(20)
-            }.onTapGesture {
-                print("Rook")
-            }
-            VStack() {
-                Divider()
-                HStack() {
-                    Image("BlackBishop")
-                        .resizable()
-                        .frame(width: 32.0, height: 32.0)
-                    Text("Bishop")
-                }.padding(20)
-            }.onTapGesture {
-                print("Bishop")
-            }
-            VStack() {
-                Divider()
-                HStack() {
-                    Image("BlackKnight")
-                        .resizable()
-                        .frame(width: 32.0, height: 32.0)
-                    Text("Knight")
-                }.padding(20)
-            }.onTapGesture {
-                print("Knight")
-            }
-            VStack() {
-                Divider()
-                HStack() {
-                    Image("BlackQueen")
-                        .resizable()
-                        .frame(width: 32.0, height: 32.0)
-                    Text("Queen")
-                }.padding(20)
-            }.onTapGesture {
-                print("Queen")
-            }
-            VStack() {
-                Divider()
-                HStack() {
-                    Image("BlackKing")
-                        .resizable()
-                        .frame(width: 32.0, height: 32.0)
-                    Text("King")
-                }.padding(20)
-            }.onTapGesture {
-                print("King")
-            }
-            Divider()
         }
     }
 }
@@ -80,4 +30,8 @@ struct PiecesView_Previews: PreviewProvider {
     static var previews: some View {
         PiecesView()
     }
+}
+
+func parseImageName(piece:String) -> String {
+    return "Black\(piece)"
 }
