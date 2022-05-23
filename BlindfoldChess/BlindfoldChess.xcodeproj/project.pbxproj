@@ -10,7 +10,9 @@
 		E52B91532828ECBB0037B737 /* PiecesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52B91522828ECBB0037B737 /* PiecesView.swift */; };
 		E52B91562828F3520037B737 /* SwiftChess in Frameworks */ = {isa = PBXBuildFile; productRef = E52B91552828F3520037B737 /* SwiftChess */; };
 		E52B91592828F3650037B737 /* SwiftSpeech in Frameworks */ = {isa = PBXBuildFile; productRef = E52B91582828F3650037B737 /* SwiftSpeech */; };
-		E55282D9282B016E00A90E7E /* PieceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E55282D8282B016E00A90E7E /* PieceView.swift */; };
+		E592A58D283232CC007FE4DC /* PieceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E592A58C283232CC007FE4DC /* PieceView.swift */; };
+		E5D615C5283B64F200AEC3A2 /* ChessboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D615C4283B64F200AEC3A2 /* ChessboardView.swift */; };
+		E5D615C7283B667A00AEC3A2 /* Chessboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D615C6283B667A00AEC3A2 /* Chessboard.swift */; };
 		ED2132172815FD6B00EC47A8 /* BlindfoldChessApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2132162815FD6B00EC47A8 /* BlindfoldChessApp.swift */; };
 		ED2132192815FD6B00EC47A8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2132182815FD6B00EC47A8 /* ContentView.swift */; };
 		ED21321B2815FD6D00EC47A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED21321A2815FD6D00EC47A8 /* Assets.xcassets */; };
@@ -19,7 +21,9 @@
 
 /* Begin PBXFileReference section */
 		E52B91522828ECBB0037B737 /* PiecesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PiecesView.swift; sourceTree = "<group>"; };
-		E55282D8282B016E00A90E7E /* PieceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieceView.swift; sourceTree = "<group>"; };
+		E592A58C283232CC007FE4DC /* PieceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieceView.swift; sourceTree = "<group>"; };
+		E5D615C4283B64F200AEC3A2 /* ChessboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChessboardView.swift; sourceTree = "<group>"; };
+		E5D615C6283B667A00AEC3A2 /* Chessboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chessboard.swift; sourceTree = "<group>"; };
 		ED2132132815FD6B00EC47A8 /* BlindfoldChess.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlindfoldChess.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED2132162815FD6B00EC47A8 /* BlindfoldChessApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlindfoldChessApp.swift; sourceTree = "<group>"; };
 		ED2132182815FD6B00EC47A8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -40,6 +44,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E5D615C8283B669B00AEC3A2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E592A58C283232CC007FE4DC /* PieceView.swift */,
+				E5D615C4283B64F200AEC3A2 /* ChessboardView.swift */,
+				E52B91522828ECBB0037B737 /* PiecesView.swift */,
+				ED2132182815FD6B00EC47A8 /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		ED21320A2815FD6B00EC47A8 = {
 			isa = PBXGroup;
 			children = (
@@ -59,12 +74,11 @@
 		ED2132152815FD6B00EC47A8 /* BlindfoldChess */ = {
 			isa = PBXGroup;
 			children = (
+				E5D615C8283B669B00AEC3A2 /* Views */,
 				ED2132162815FD6B00EC47A8 /* BlindfoldChessApp.swift */,
-				ED2132182815FD6B00EC47A8 /* ContentView.swift */,
 				ED21321A2815FD6D00EC47A8 /* Assets.xcassets */,
 				ED21321C2815FD6D00EC47A8 /* Preview Content */,
-				E52B91522828ECBB0037B737 /* PiecesView.swift */,
-				E55282D8282B016E00A90E7E /* PieceView.swift */,
+				E5D615C6283B667A00AEC3A2 /* Chessboard.swift */,
 			);
 			path = BlindfoldChess;
 			sourceTree = "<group>";
@@ -156,9 +170,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				E52B91532828ECBB0037B737 /* PiecesView.swift in Sources */,
+				E5D615C7283B667A00AEC3A2 /* Chessboard.swift in Sources */,
 				ED2132192815FD6B00EC47A8 /* ContentView.swift in Sources */,
+				E5D615C5283B64F200AEC3A2 /* ChessboardView.swift in Sources */,
 				ED2132172815FD6B00EC47A8 /* BlindfoldChessApp.swift in Sources */,
-				E55282D9282B016E00A90E7E /* PieceView.swift in Sources */,
+				E592A58D283232CC007FE4DC /* PieceView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

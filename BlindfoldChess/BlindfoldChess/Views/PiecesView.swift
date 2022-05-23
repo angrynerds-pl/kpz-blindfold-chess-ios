@@ -13,15 +13,14 @@ struct PiecesView: View {
     ]
     
     var body: some View {
-        NavigationView {
-            List(pieces, id: \.self) { piece in
-                NavigationLink(destination: PieceView(piece: piece)) {
-                    Image(parseImageName(piece: piece))
-                        .resizable()
-                        .frame(width: 24.0, height: 24.0)
-                    Text(piece)
-                }.navigationBarTitle("Select piece to see more information", displayMode: .inline)
-            }
+        List(pieces, id: \.self) { piece in
+            NavigationLink(destination: PieceView(piece: piece)) {
+                Image(parseImageName(piece: piece))
+                    .resizable()
+                    .frame(width: 24.0, height: 24.0)
+                Text(piece)
+            }.navigationBarTitle("Select piece",
+                                 displayMode: .inline)
         }
     }
 }

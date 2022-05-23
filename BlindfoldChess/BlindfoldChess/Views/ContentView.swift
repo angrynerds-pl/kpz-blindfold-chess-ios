@@ -9,10 +9,15 @@ struct ContentView: View {
                 NavigationLink(destination: PiecesView()) {
                     Text("Go to pieces")
                 }
+                NavigationLink(destination: ChessboardView()) {
+                    Text("Play")
+                }
             }
         }
     }
+    
 }
+
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {

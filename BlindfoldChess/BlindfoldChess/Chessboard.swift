@@ -23,25 +23,7 @@ struct CheckerBoard: Shape {
                 }
             }
         }
-
         return path
     }
-}
-
-struct PieceView: View {
-    let piece: String
     
-    var body: some View {
-        Text("\(piece)")
-        CheckerBoard(board: 4)
-            .fill(Color.blue)
-            .frame(width: 300, height: 300)
-    }
 }
-
-struct PieceView_Previews: PreviewProvider {
-    static var previews: some View {
-        PieceView(piece: "King")
-    }
-}
-
