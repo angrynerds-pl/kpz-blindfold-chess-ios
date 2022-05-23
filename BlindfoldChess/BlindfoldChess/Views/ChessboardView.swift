@@ -6,10 +6,11 @@ import SwiftChess
 struct ChessboardView: View {
     
     var body: some View {
-        
         CheckerBoard(board: 8)
             .fill(Color.blue)
             .frame(width: 400, height: 400)
+        Spacer()
+        SpeechView()
     }
 }
 
