@@ -5,5 +5,5 @@ This is a simple chess game created in SwiftUI for iPhone devices, enabling play
 Available game modes are:
 <ul>
   <li>Player vs Computer</li>
-  <li>SPlayer vs Second player</li>
+  <li>Player vs Second player</li>
 </ul>
