@@ -1,26 +1,20 @@
 import SwiftUI
 
 struct ContentView: View {
+    @StateObject var GameStatus = Game()
     var body: some View {
-        NavigationView {
-            VStack {
-                Text("Hello World!")
-                Spacer()
-                NavigationLink(destination: PiecesView()) {
-                    Text("Go to pieces")
-                }
-                NavigationLink(destination: ChessboardView()) {
-                    Text("Play")
-                }
-            }
-        }
+        MovingView()
+            .environmentObject(GameStatus)
+        Spacer()
+        SpeechView()
+            .environmentObject(GameStatus)
     }
-    
 }
-
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        Group {
+            ContentView()
+        }
     }
 }
